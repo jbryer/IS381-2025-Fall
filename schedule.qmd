@@ -5,8 +5,14 @@ editor_options:
   chunk_output_type: console
 ---
 
+```{r, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+source('config.R')
+```
+
 This page contains an outline of the topics, content, and assignments for the semester.
 Note that this schedule will be updated as the semester progresses.
+
+Meetups will be held on `r class_day` from `r class_time`. [Click here to join the meetup](https://us02web.zoom.us/j/81437953852?pwd=Q9bNGwoair9WGOtb4dBsI6cdi5QHUI.1).
 
 
 ```{r, echo=FALSE, results='asis'}

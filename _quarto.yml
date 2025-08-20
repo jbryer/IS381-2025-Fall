@@ -16,12 +16,12 @@ project:
     - "cp -rf slides/ docs/slides/"
 
 website:
-  # announcement:
-  #   content: "[Click here]() to the join the Slack channel."
-  #   # position: below-navbar # above-navbar or below-navbar
-  #   icon: slack #info-circle # https://icons.getbootstrap.com
-  #   dismissable: false
-  #   type: primary # primary, secondary, success, danger, warning, info, light, dark
+  announcement:
+    content: "Our first meetup will be Monday at 6:30pm. [Click here to join.](https://us02web.zoom.us/j/81437953852?pwd=Q9bNGwoair9WGOtb4dBsI6cdi5QHUI.1)"
+    # position: below-navbar # above-navbar or below-navbar
+    icon: slack #info-circle # https://icons.getbootstrap.com
+    dismissable: false
+    type: primary # primary, secondary, success, danger, warning, info, light, dark
 
   page-navigation: true
   title: "IS381 Statistics and Probability with R"
