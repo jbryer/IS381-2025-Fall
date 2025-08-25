@@ -51,14 +51,13 @@ class: center, middle, inverse, title-slide
 	* Data Project
 	* Exams
 * Software
-	* The `DATA606` R Package
 	* Using R Markdown
 
 ---
 
 # A little about me...
 
-* Assistant Professor at CUNY in Data Science and Information Systems
+* Assistant Professor at CUNY in Data and Information Sciences
 
 * Principal Investigator for a Department of Education Grant to develop and test the Diagnostic Assessment and Achievement of College Skills ([www.DAACS.net](http://www.daacs.net))  
 
@@ -103,23 +102,38 @@ knitr::include_graphics('images/Sleeping_Empire.jpg')
 
 # Syllabus `r hexes(c('blogdown', 'rmarkdown'))`
 
-Syllabus and course materials are here: [https://`r paste0(tolower(semester), year)`.data606.net](https://`r paste0(tolower(semester), year)`.data606.net)
+Syllabus and course materials are here: [https://`r paste0(tolower(semester), year)`.is381.net](https://`r paste0(tolower(semester), year)`.data606.net)
 
 The site is built using [Quarto](https://quarto.org) and hosted on [Github](https://github.com/jbryer/`r github_repo`). Each page of the site has a "Edit this page" link at the bottom right, use that to start a pull request on Github.
 
 We will use Brightspace primary for submitting assignments only. Please submit a PDF.
 
 PDFs are preferred for the homework as there is some LaTeX formatting in the R markdown files. The `tineytex` R package helps with install LaTeX, but you can also install LaTeX using [MiKTeX](http://miktex.org) (for Windows) and [BasicTeX](http://www.tug.org/mactex/morepackages.html) (for Mac) See this page for more information: 
-https://`r paste0(tolower(semester), year)`.data606.net/course-overview/software/
+https://`r paste0(tolower(semester), year)`.is381.net/course-overview/software/
+
+---
+
+# Assignments / Grading
+
+Labs (50%)
+
+Data Project (25% Total; Proposal 5%, Final Presentation 20%)
+
+Final Exam (15%)
+
+Participation (10%): 
+
+* DAACS SRL (https://cuny.daacs.net) and Google Form (only once, at the beginning of the semester)
+* Weekly One-Minute Papers
 
 ---
 class: font90
 
 # Meetups
 
-We will have meetups on Wednesday evenings at 8:00pm. 
+We will have meetups on `r class_day` evenings at `r class_time`. 
 
-Meetups will be recorded and made available the next day on the [course website](https://spring2024.data606.net/course-overview/meetups/).
+Meetups will be recorded and made available the next day on the [course website `r course_link`](`r course_link`).
 
 Though attending live is not strictly required, **I expect everyone to watch the lectures during the week.** I use the class meetups to convey important information and announcements. Very often I will cover some topics not in the textbook. Students who attend the meetups tend to do well on the assignments.
 
@@ -132,7 +146,7 @@ Though attending live is not strictly required, **I expect everyone to watch the
 ]
 
 ---
-
+class: font70
 # Schedule
 
 ```{r schedule-setup, echo=FALSE, warning=FALSE, message=FALSE}
@@ -154,7 +168,9 @@ lastModified <- format(file.info('../Schedule.xlsx')[1,]$mtime, '%B %d, %Y %I:%M
 
 options(knitr.kable.NA = '')
 readxl::read_excel('../Schedule.xlsx') |>
-	dplyr::select(Week, Topic) |>
+	dplyr::select(Week, Topic, Start, End) |>
+	dplyr::mutate(Start = format(Start, '%B %d, %Y'),
+				  End = format(End, '%B %d, %Y')) |>
 	knitr::kable(row.names = FALSE, align = c('l','l')) |>	
 	kableExtra::column_spec(column = 1, width_max = '20px') 
 
@@ -185,25 +201,15 @@ This will be our primary textbook for most of the semesters. Our goal is to cove
 
 .pull-right[
 
-Navarro, D. (2018, version 0.6). *Learning Statistics with R*
-
-.font70[
-
-This textbooks has a chapter on Bayesian analysis that we will use at the end of the semester. 
-
-]
+Wickham, H., Cetinkaya-Rundel, M., & Grolemund, G. (2023). R for Data Science (2nd ed).
 
 .center[
 
-<a href = "https://github.com/jbryer/DATA606spring2024/blob/master/Resources/Textbooks/lsr-0.6.pdf"><img src = 'images/lsr.png' alt = 'Learning Statistics with R' height = '375px' /></a>
+<a href = "https://r4ds.hadley.nz"><img src = 'images/r4ds.jpg' alt = 'R for Data Science' height = '375px' /></a>
 
 ]
 
 ]
-
----
-
-# Assignments
 
 
 ---
@@ -236,9 +242,21 @@ tinytex::install_tinytex()
 
 
 ---
+# Use of Artificial Intelligence (AI)
+
+First, AI is a marketing term. I prefer to be more specific regarding what we are doing:
+
+1. Machine Learning (ML) - This course, along with IS382, will provide the foundations for how ML algorithms work. Generally speaking, the goal is to predict some known (and sometimes unknown in the case of unsupervised learning models) outcome.
+
+2. Large Language Models (LLM) - This is often what people mean when they say AI. This includes producsts like ChatGPT, Antrhopic, Google Gemini, etc. LLMs generate text, images, videos, etc. from a prompt.
+
+The goal of this course is for *you to develop the foundation knowledge and skills to do statistics.* Using chat bots to do the assignments subverts this goal. **The content generated by LLMs is often wrong!** If you use LLMs to assist in completing the assignments, **you must include the prompt and response in your submission**.
+
+
+---
 # Next steps... `r hexes(c('DAACS'))`
 
-Before XXX (XXX):
+Before August 31st:
 
 * Complete this Google form: `r formative_assessment`
 * Go to https://cuny.daacs.net and complete the self-regulated learning assessment
@@ -246,7 +264,7 @@ Before XXX (XXX):
 
 Then:
 
-* Start Lab 1 (due XXX)
+* Start *Intro to R Lab* (due August 31st)
 
 ---
 class: inverse, right, middle, hide-logo
@@ -259,6 +277,6 @@ class: inverse, right, middle, hide-logo
 [`r icons::fontawesome("slack")` `r gsub('https://', '', slack_link)`](`r slack_link`)  
 [`r icons::fontawesome("github")` @jbryer](https://github.com/jbryer)  
 [`r icons::fontawesome('mastodon')` @jbryer@vis.social](https://vis.social/@jbryer)  
-[`r icons::fontawesome("link")` `r paste0(tolower(semester), year, '.data606.net')`](https://`r paste0(tolower(semester), year, '.data606.net')`)   
+[`r icons::fontawesome("link")` `r paste0(tolower(semester), year, '.is381.net')`](https://`r paste0(tolower(semester), year, '.is381.net')`)   
 
 
