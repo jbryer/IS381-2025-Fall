@@ -8,7 +8,7 @@ image: "01-Introduction_to_R_and_RStudio.png"
 ---
 
 
-[Click here](/slides//slides/00-Intro_to_Course.html.html#1) to open the slides.
+[Click here](/slides/00-Intro_to_Course.html.html#1) to open the slides([PDF](/slides/00-Intro_to_Course.html.pdf)).
 
 
 
