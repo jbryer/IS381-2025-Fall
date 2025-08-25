@@ -11,7 +11,7 @@ for(i in 1:nrow(meetups)) {
 						   gsub(' ', '_', meetups[i,]$Topic),
 						   '.qmd')
 
-		if(file.info(blogfile)$mtime < file.info(schedule_file)$mtime) {
+		# if(file.info(blogfile)$mtime < file.info(schedule_file)$mtime) {
 			blogcontent <- ''
 			if(!is.na(meetups[i,]$Slides)) {
 				blogcontent <- paste0(blogcontent, '[Click here](/', slides_dir, '/', meetups[i,]$Slides, '.html#1) to open the slides')
@@ -61,6 +61,6 @@ for(i in 1:nrow(meetups)) {
 				additionalcontent, '\n\n',
 				sep  = '',
 				file = blogfile)
-		}
+		# }
 	}
 }
