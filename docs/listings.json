@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/02-Intro_to_Data.html",
       "/posts/01-Introduction_to_R_and_RStudio.html",
       "/posts/00-Welcome.html"
     ]
