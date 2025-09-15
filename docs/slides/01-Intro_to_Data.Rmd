@@ -1,6 +1,6 @@
 ---
 title: "Intro to Data"
-subtitle: "DATA 606 - Statistics & Probability for Data Analytics"
+subtitle: "IS381 - Statistics and Probability with R"
 author: Jason Bryer, Ph.D.
 date: "September 1, 2025"
 output:

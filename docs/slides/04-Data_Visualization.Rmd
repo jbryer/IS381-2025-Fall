@@ -1,8 +1,8 @@
 ---
-title: "Summarizing Data Part 2"
-subtitle: "DATA 606 - Statistics & Probability for Data Analytics"
+title: "Data visualization with ggplot2"
+subtitle: "Statistics and Probability with R"
 author: Jason Bryer, Ph.D.
-date: "November 12, 2025"
+date: "September 15, 2025"
 output:
   xaringan::moon_reader:
     css: ["assets/mtheme_max.css", "assets/fonts_mtheme_max.css"]
