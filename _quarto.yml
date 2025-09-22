@@ -8,6 +8,7 @@ project:
   - "!slides/"
   - "!assignments/"
   pre-render:
+    - "touch schedule.qmd"
     - build_pdf_slides.R
     - build_posts.R
   post-render:
