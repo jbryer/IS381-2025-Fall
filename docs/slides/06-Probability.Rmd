@@ -1,8 +1,8 @@
 ---
 title: "Probability"
-subtitle: "DATA 606 - Statistics & Probability for Data Analytics"
+subtitle: "IS381 - Statistics and Probability with R"
 author: Jason Bryer, Ph.D.
-date: "February 19, 2025"
+date: "September 29, 2025"
 output:
   xaringan::moon_reader:
     css: ["assets/mtheme_max.css", "assets/fonts_mtheme_max.css"]
@@ -411,22 +411,22 @@ set.seed(2112); sample(100, 1)
 # Is it really random?
 
 ```{r}
-df <- data.frame(x = 1:1000, y = NA_integer_)
+df <- data.frame(seed = 1:1000, random_number = NA_integer_)
 for(i in 1:nrow(df)) {
-	set.seed(i)
-	df[i,]$y <- sample(100, 1)
+	set.seed(df[i,]$seed)
+	df[i,]$random_number <- sample(100, 1)
 }
 ```
 
 .pull-left[
 ```{r}
-ggplot(df, aes(x = x, y = y)) + geom_point()
+ggplot(df, aes(x = seed, y = random_number)) + geom_point()
 ```
 ]
 
 .pull-right[
 ```{r}
-cor.test(df$x, df$y)
+cor.test(df$seed, df$random_number)
 ```
 ]
 
