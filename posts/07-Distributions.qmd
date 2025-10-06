@@ -1,0 +1,16 @@
+---
+title: "Distributions"
+date: 2025-10-06
+draft: false
+description: "Slides and recording for the *Distributions* meetup."
+categories: ["Meetups"]
+image: "07-Distributions.png"
+---
+
+
+[Click here](/slides/07-Distributions.html#1) to open the slides.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YeY-5yfrLVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+

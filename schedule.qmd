@@ -34,6 +34,11 @@ schedule <- readxl::read_excel('Schedule.xlsx') |> as.data.frame()
 
 # schedule$Start <- format(schedule$Start, '%a, %b %d')
 
+video_rows <- which(!is.na(schedule$Video))
+if(length(video_rows) > 0) {
+	schedule[video_rows,]$Video <- paste0('https://youtu.be/', schedule[video_rows,]$Video)
+}
+
 slides <- !is.na(schedule$Slides)
 if(sum(slides) > 0) {
 	slide_links <- paste0(

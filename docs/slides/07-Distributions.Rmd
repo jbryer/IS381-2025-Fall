@@ -2,7 +2,7 @@
 title: "Distributions"
 subtitle: "DATA 606 - Statistics & Probability for Data Analytics"
 author: Jason Bryer, Ph.D.
-date: "February 26, 2025"
+date: "October 6, 2025"
 output:
   xaringan::moon_reader:
     css: ["assets/mtheme_max.css", "assets/fonts_mtheme_max.css"]
@@ -44,7 +44,7 @@ class: center, middle, inverse, title-slide
 library(googlesheets4)
 omp <- read_sheet(one_minute_paper_results)
 omp <- omp %>% dplyr::filter(Topic == 'Probability (Chapter 3)')
-source('word_cloud.R')
+# source('word_cloud.R')
 ```
 
 .pull-left[
