@@ -19,7 +19,7 @@
 class: center, middle, inverse, title-slide
 
 # Null Hypothesis Testing and Bootstrapping
-## DATA 606 - Statistics &amp; Probability for Data Analytics
+## IS381 - Statistics &amp; Probability for Data Analytics
 ### Jason Bryer, Ph.D.
 ### October 20, 2025
 
@@ -46,7 +46,7 @@ mean(pop)
 ```
 
 ```
-## [1] 0.4992961
+## [1] 0.4986148
 ```
 
 
@@ -63,7 +63,7 @@ mean(samp2)
 ```
 
 ```
-## [1] 0.540135
+## [1] 0.5166214
 ```
 
 &lt;img src="09-CLT_and_Boostrapping_files/figure-html/unnamed-chunk-4-1.png" style="display: block; margin: auto;" /&gt;
@@ -84,10 +84,10 @@ Using confidence intervals, if the *null* value is within the confidence interva
 ```
 
 ```
-## [1] 0.4280486 0.6522213
+## [1] 0.4219844 0.6112584
 ```
 
-Since 0.5 fall within 0.4280486, 0.6522213, we *fail* to reject the null hypothesis.
+Since 0.5 fall within 0.4219844, 0.6112584, we *fail* to reject the null hypothesis.
 
 
 ---
@@ -293,7 +293,7 @@ mean(pop)
 ```
 
 ```
-## [1] 0.5007972
+## [1] 0.5013794
 ```
 
 &lt;img src="09-CLT_and_Boostrapping_files/figure-html/unnamed-chunk-17-1.png" style="display: block; margin: auto;" /&gt;
@@ -324,7 +324,7 @@ head(boot.samples)
 ```
 
 ```
-## [1] 0.5091244 0.4674614 0.5253851 0.5433535 0.5038608 0.5932031
+## [1] 0.5459741 0.4617361 0.5527816 0.5628997 0.5920669 0.5335831
 ```
 
 ---
@@ -352,7 +352,7 @@ c(mean(boot.samples) - 1.96 * sd(boot.samples),
 ```
 
 ```
-## [1] 0.4193305 0.5833113
+## [1] 0.4410311 0.5900581
 ```
 
 ---
@@ -369,7 +369,7 @@ head(boot.samples.median)
 ```
 
 ```
-## [1] 0.4536694 0.5706174 0.3729051 0.4417805 0.4741862 0.3729051
+## [1] 0.5908739 0.5810760 0.5222786 0.4820060 0.6023310 0.5616389
 ```
 
 95% confidence interval for the median
@@ -381,7 +381,7 @@ c(mean(boot.samples.median) - 1.96 * sd(boot.samples.median),
 ```
 
 ```
-## [1] 0.3135662 0.6527524
+## [1] 0.4210216 0.6661072
 ```
 
 ---

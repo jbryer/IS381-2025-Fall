@@ -19,7 +19,7 @@
 class: center, middle, inverse, title-slide
 
 # Distributions
-## DATA 606 - Statistics &amp; Probability for Data Analytics
+## IS381 - Statistics and Probability with R
 ### Jason Bryer, Ph.D.
 ### October 6, 2025
 
@@ -54,7 +54,7 @@ cumsum(coins)[length(coins)]
 ```
 
 ```
-## [1] 22
+## [1] 4
 ```
 
 ---
@@ -72,7 +72,7 @@ head(samples, n = 15)
 ```
 
 ```
-##  [1]  -4 -16   0   2 -10  12 -18  10  -8  -8  14   2  -6  -4 -10
+##  [1]  -4   8  -8 -10 -14   6  14  18  -2   2   0   2  -4   8  14
 ```
 
 ---
@@ -94,7 +94,7 @@ hist(samples)
 ```
 
 ```
-## [1] -0.01
+## [1] 0.022
 ```
 
 ``` r
@@ -102,7 +102,7 @@ hist(samples)
 ```
 
 ```
-## [1] 9.891296
+## [1] 9.924011
 ```
 
 ---
@@ -115,7 +115,7 @@ length(within1sd) / length(samples)
 ```
 
 ```
-## [1] 0.621
+## [1] 0.638
 ```
 
 ``` r
@@ -124,7 +124,7 @@ length(within2sd) / length(samples)
 ```
 
 ```
-## [1] 0.95
+## [1] 0.948
 ```
 
 ``` r
@@ -133,7 +133,7 @@ length(within3sd) / length(samples)
 ```
 
 ```
-## [1] 0.999
+## [1] 0.992
 ```
 
 
@@ -174,7 +174,7 @@ pnorm(15, mean=mean(samples), sd=sd(samples))
 ```
 
 ```
-## [1] 0.9354292
+## [1] 0.9343849
 ```
 
 &lt;img src="07-Distributions_files/figure-html/unnamed-chunk-14-1.png" style="display: block; margin: auto;" /&gt;
@@ -188,7 +188,7 @@ pnorm(15, mean=mean(samples), sd=sd(samples))
 ```
 
 ```
-## [1] 0.06457078
+## [1] 0.06561506
 ```
 
 &lt;img src="07-Distributions_files/figure-html/unnamed-chunk-16-1.png" style="display: block; margin: auto;" /&gt;

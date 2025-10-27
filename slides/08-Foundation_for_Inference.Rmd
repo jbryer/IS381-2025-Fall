@@ -1,6 +1,6 @@
 ---
 title: "Foundation for Inference"
-subtitle: "DATA 606 - Statistics & Probability for Data Analytics"
+subtitle: "IS381 - Statistics and Probability with R"
 author: Jason Bryer, Ph.D.
 date: "October 13, 2025"
 output:

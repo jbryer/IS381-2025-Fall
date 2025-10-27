@@ -1,6 +1,6 @@
 ---
 title: "Data visualization with ggplot2"
-subtitle: "Statistics and Probability with R"
+subtitle: "IS381 - Statistics & Probability for Data Analytics"
 author: Jason Bryer, Ph.D.
 date: "September 15, 2025"
 output:

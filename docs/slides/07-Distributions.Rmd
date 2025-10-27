@@ -1,6 +1,6 @@
 ---
 title: "Distributions"
-subtitle: "DATA 606 - Statistics & Probability for Data Analytics"
+subtitle: "IS381 - Statistics and Probability with R"
 author: Jason Bryer, Ph.D.
 date: "October 6, 2025"
 output:
