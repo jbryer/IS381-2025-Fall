@@ -32,6 +32,8 @@ library("cowplot")
 library("rmarkdown")
 library("qrcode")
 library("tm")
+library("icons") # remotes::install_github("mitchelloharawild/icons")
+library("kableExtra")
 
 library("VisualStats") # remotes::install_github('jbryer/VisualStats')
 
